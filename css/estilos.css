@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+.cuerpo {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr); }
+
+.navbarYtarjetas {
+  display: grid;
+  align-items: start;
+  grid-column: 1/11;
+  grid-row: 1; }
+  .navbarYtarjetas header {
+    margin-bottom: 0.5vw; }
+
+.navbar {
+  padding: 0; }
+  .navbar .container-fluid {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00E8FF;
+    align-content: center; }
+    .navbar .container-fluid .navbar-brand {
+      margin-left: -7vw; }
+
+.navbar-toggler {
+  margin-right: 1vw;
+  font-weight: bold; }
+
+main {
+  display: grid;
+  grid-row: 2;
+  grid-column: 1/11; }
