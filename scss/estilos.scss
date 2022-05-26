@@ -9,7 +9,11 @@
 //variables
 $color-navbar: #00E8FF;
 
-
+header{
+  img{
+    background-size: cover;
+  }
+}
 
 body{
   display: grid;
@@ -31,16 +35,23 @@ body{
     header{
       margin-bottom: 0.5vw;
     }
+    img{
+      height: 30vh;
+      width: 30vw;
+      object-fit: cover;
+    }
 }
 
 .navbar{
   padding: 0;
+  background-image: url(/images/fondoNav.svg);
+    background-size: cover;
+    overflow: hidden;
   .container-fluid{
     display: flex;
     height: 15vh;
     align-items: center;
     justify-content: space-between;
-    background-color: $color-navbar;
     align-content: center;
     .navbar-brand{
         margin-left: -7vw;
@@ -60,12 +71,10 @@ main{
   height: 37vw;
 }
 
-#carouselExampleCaptions{
-  height: 35vw;
-  .carousel-item{
-  img{
-    object-fit: fill;
-    max-height: 33vw;
-  }
+.carousel-inner{
+      height: 60vh;
+      width: 80vw;
+      object-fit: cover;
+      justify-content: center;
 }
-}
+
