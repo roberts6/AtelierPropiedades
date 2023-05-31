@@ -1,0 +1,494 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Aplazo</title>
+    <meta name="description" content="Tu crédito Aplazo en efectivo.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon"
+        href="https://aplazoassets.s3.us-west-2.amazonaws.com/icons/aplazo/favicon.ico">
+    <!-- Facebook metadata -->
+    <link rel="image_src"
+        href="https://image.em.aplazo.mx/lib/fe3411737164047d761078/m/5/2f5889e4-71c1-4e5b-8187-0f8d2d68132f.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aplazo" />
+    <meta property="og:description" content="Tu crédito Aplazo en efectivo." />
+    <meta property="og:image"
+        content="https://image.em.aplazo.mx/lib/fe3411737164047d761078/m/5/2f5889e4-71c1-4e5b-8187-0f8d2d68132f.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Cards -->
+    <!-- <meta property="twitter:creator" content="" /> -->
+    <meta property="twitter:url" content="https://aplazo.mx/" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- <meta property="twitter:site" content="" /> -->
+
+    <!-- Twitter Cards description  -->
+    <meta property="twitter:title" content="Aplazo" />
+    <meta property="twitter:description" content="Tu crédito Aplazo en efectivo." />
+    <meta property="twitter:image:src"
+        content="https://image.em.aplazo.mx/lib/fe3411737164047d761078/m/5/2f5889e4-71c1-4e5b-8187-0f8d2d68132f.png" />
+    <meta property="twitter:image:width" content="1200" />
+    <meta property="twitter:image:height" content="630" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cloud.em.aplazo.mx/credito-aplazo-en-efectivo-css">
+</head>
+
+<body>
+
+
+    <!-- Content -->
+    <div class="row no-gutters">
+
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <!-- logo -->
+                <div class="col-12 logo text-center">
+                    <img src="https://image.em.aplazo.mx/lib/fe3411737164047d761078/m/1/f47e59e2-b185-485a-9a06-1155c1c43611.png"
+                        alt="Aplazo" class="imgLogo">
+                </div>
+
+                <!-- img01 -->
+                <div class="col-12 noPadding">
+                    <img src="https://image.em.aplazo.mx/lib/fe3411737164047d761078/m/5/2f5889e4-71c1-4e5b-8187-0f8d2d68132f.png"
+                        alt="Tu crédito Aplazo en efectivo" class="img-fluid">
+                </div>
+
+                <!-- formulario -->
+                <div class="col-12 col-md-9 mainForm">
+                    <div class="row">
+                        <div class="col-12 noPadding mainFormTxt">
+                            <div class="col-12 noPadding text-center mb-2 pb-4">
+                                <h2>
+                                    Registro
+                                </h2>
+                                <p>
+                                    Todos los campos con <span class="txt-red-light">*</span> son obligatorios
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 noPadding mainFormForm" id="formulario">
+
+                            <!-- Form -->
+                            <form class="col-12" id="registro" action="https://cloud.em.aplazo.mx/cahs-loans-process"
+                                method="POST" novalidate="">
+                                <input type="hidden" value="%%=QueryParameter("id")=%%" name="customerId" />
+                                <input type="hidden" value="%%=QueryParameter("origen")=%%" name="origen" />
+                                <input type="hidden" value="%%=QueryParameter("tipo")=%%" name="tipo" />
+                                <!-- form -->
+                                <div class="col-12">
+                                    <!-- form001 -->
+                                    <div class="col-12 noPadding formContent form001">
+
+
+
+                                        <div class="col-12">
+                                            <div class="row">
+
+                                                <div class="col-12 noPadding">
+                                                    <div class="col-12 noPadding">
+                                                        <label for="email">Email
+                                                        </label><span class="txt-red">*</span>
+                                                    </div>
+                                                    <div class="col-12 noPadding">
+                                                        <input type="email" placeholder="nombre@mail.com" class="input"
+                                                            name="email" id="email" data-validate="true"
+                                                            data-settings="False">
+                                                        <div id="email_solicitud_error"
+                                                            class="alert alert-danger error d-none" role="alert">
+                                                            Coloca un email válido
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 noPadding">
+                                                    <div class="col-12 noPadding">
+                                                        <label for="MobilePhone">Teléfono que registraste en Aplazo a 10
+                                                            dígitos.</label><span class="txt-red">*</span>
+                                                    </div>
+                                                    <div class="col-12 noPadding">
+                                                        <input type="tel" placeholder="5512345678" class="input"
+                                                            name="phone" id="phone" data-validate="true"
+                                                            data-settings="False">
+                                                        <div id="phone_solicitud_error"
+                                                            class="alert alert-danger error d-none" role="alert">
+                                                            Coloca un número de teléfono válido
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-12 noPadding">
+                                                    <div class="col-12 noPadding">
+                                                        <label for="clabe">Tu CLABE bancaria de 18 dígitos. La cuenta
+                                                            debe estar a tu nombre.</label><span
+                                                            class="txt-red">*</span>
+                                                    </div>
+                                                    <div class="col-12 noPadding">
+                                                        <input type="tel" placeholder="5512345678" class="input"
+                                                            name="clabe" id="clabe" data-validate="true"
+                                                            data-settings="False">
+                                                        <div id="clabe_solicitud_error"
+                                                            class="alert alert-danger error d-none" role="alert">
+                                                            Coloca un número de 18 dígitos
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <!-- form row -->
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <!-- form input -->
+                                                <div class="col-12 noPadding">
+                                                    <div class="col-12 noPadding">
+                                                        <label for="banco">
+                                                            Banco<span class="txt-red-light">*</span></label>
+                                                    </div>
+                                                    <div class="col-12 noPadding">
+                                                        <select class="custom-select inputSelect" name="banco"
+                                                            id="banco" data-validate="true" type="select"
+                                                            data-settings="False" data-validate="true">
+                                                            <option value="">Selecciona una opción</option>
+                                                            <option id='ABC Capital'>ABC Capital</option>
+                                                            <option id='Actinver'>Actinver</option>
+                                                            <option id='Afirme'>Afirme</option>
+                                                            <option id='Akala'>Akala</option>
+                                                            <option id='American Express'>American Express</option>
+                                                            <option id='Arcus'>Arcus</option>
+                                                            <option id='ASP Integra OPC'>ASP Integra OPC</option>
+                                                            <option id='Autofin'>Autofin</option>
+                                                            <option id='Azteca'>Azteca</option>
+                                                            <option id='Bajio'>Bajio</option>
+                                                            <option id='Banamex'>Banamex</option>
+                                                            <option id='Banco Finterra'>Banco Finterra</option>
+                                                            <option id='Bacomext'>Bacomext</option>
+                                                            <option id='Bancoppel'>Bancoppel</option>
+                                                            <option id='Banco S3'>Banco S3</option>
+                                                            <option id='Bancrea'>Bancrea</option>
+                                                            <option id='Banjercito'>Banjercito</option>
+                                                            <option id='Bankaool'>Bankaool</option>
+                                                            <option id='Bank of America'>Bank of America</option>
+                                                            <option id='Banobras'>Banobras</option>
+                                                            <option id='Banorte'>Banorte</option>
+                                                            <option id='Banregio'>Banregio</option>
+                                                            <option id='Bansi'>Bansi</option>
+                                                            <option id='Banxico'>Banxico</option>
+                                                            <option id='Barclays'>Barclays</option>
+                                                            <option id='Bbase'>Bbase</option>
+                                                            <option id='BBVA Mexico'>BBVA Mexico</option>
+                                                            <option id='Bmonex'>Bmonex</option>
+                                                            <option id='Caja POP Mexica'>Caja POP Mexica</option>
+                                                            <option id='Caja Telefonist'>Caja Telefonist</option>
+                                                            <option id='CiBanco'>CiBanco</option>
+                                                            <option id='CoDi Valida'>CoDi Valida</option>
+                                                            <option id='Compartamos'>Compartamos</option>
+                                                            <option id='Consubanco'>Consubanco</option>
+                                                            <option id='Credicapital'>Credicapital</option>
+                                                            <option id='Credit Suisse'>Credit Suisse</option>
+                                                            <option id='Deutche'>Deutche</option>
+                                                            <option id='Donde'>Donde</option>
+                                                            <option id='Estructuradores'>Estructuradores</option>
+                                                            <option id='Finamex'>Finamex</option>
+                                                            <option id='Fincomun'>Fincomun</option>
+                                                            <option id='HSBC'>HSBC</option>
+                                                            <option id='ICBC'>ICBC</option>
+                                                            <option id='Inbursa'>Inbursa</option>
+                                                            <option id='Indeval'>Indeval</option>
+                                                            <option id='Inmobiliario'>Inmobiliario</option>
+                                                            <option id='Intercam Banco'>Intercam Banco</option>
+                                                            <option id='Invercap'>Invercap</option>
+                                                            <option id='Invex'>Invex</option>
+                                                            <option id='JP Morgan'>JP Morgan</option>
+                                                            <option id='Libertad'>Libertad</option>
+                                                            <option id='Masari'>Masari</option>
+                                                            <option id='Mifel'>Mifel</option>
+                                                            <option id='Mizuho Bank'>Mizuho Bank</option>
+                                                            <option id='Multiva Banco'>Multiva Banco</option>
+                                                            <option id='Sabadell'>Sabadell</option>
+                                                            <option id='Santander'>Santander</option>
+                                                            <option id='ScotiaBank'>ScotiaBank</option>
+                                                            <option id='Shinhan'>Shinhan</option>
+                                                            <option id='STP'>STP</option>
+                                                            <option id='Unagra'>Unagra</option>
+                                                            <option id='Vector'>Vector</option>
+                                                            <option id='Ve por Mas'>Ve por Mas</option>
+                                                        </select>
+                                                        <div id="banco_solicitud_error"
+                                                            class="alert alert-danger error d-none" role="alert">
+                                                            Este campo es obligatorio.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-12">
+                                            <div class="row">
+
+                                                <div class="col-12 noPadding">
+                                                    <div class="col-12 noPadding">
+                                                        <label for="lastName">Apellido Paterno - Como aparece en tu
+                                                            estado de cuenta bancario.</label><span
+                                                            class="txt-red">*</span>
+                                                    </div>
+                                                    <div class="col-12 noPadding">
+                                                        <input type="text" placeholder="Escribe tus apellidos"
+                                                            class="input" id="lastName" name="lastName"
+                                                            data-validate="true" data-settings="False">
+                                                        <div id="lastName_solicitud_error"
+                                                            class="alert alert-danger error d-none" role="alert">
+                                                            Este campo es obligatorio.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 noPadding">
+                                                    <div class="col-12 noPadding">
+                                                        <label for="secondLastName">Apellido Materno - Como aparece en
+                                                            tu estado de cuenta bancario.</label><span
+                                                            class="txt-red">*</span>
+                                                    </div>
+                                                    <div class="col-12 noPadding">
+                                                        <input type="text" placeholder="Escribe tus apellidos"
+                                                            class="input" id="secondLastName" name="secondLastName"
+                                                            data-validate="true" data-settings="False">
+                                                        <div id="secondLastName_solicitud_error"
+                                                            class="alert alert-danger error d-none" role="alert">
+                                                            Este campo es obligatorio.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 noPadding">
+                                                    <div class="col-12 noPadding">
+                                                        <label for="name">Nombres(s) - Como aparece en tu estado de
+                                                            cuenta bancario.</label><span class="txt-red">*</span>
+                                                    </div>
+                                                    <div class="col-12 noPadding">
+                                                        <input type="text" placeholder="Escribe tu nombre" class="input"
+                                                            name="name" id="name" data-validate="true"
+                                                            data-settings="False">
+                                                        <div id="name_solicitud_error"
+                                                            class="alert alert-danger error d-none" role="alert">
+                                                            Este campo es obligatorio.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-12 text-center">
+                                            <div class="col-12 text-center">
+                                                <div class="row justify-content-md-center">
+                                                    <div class="col-12 noPadding text-left">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="privacidad">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    value="TRUE" id="privacidad" name="privacidad"
+                                                                    data-validate="true" data-settings="False">
+                                                                <p>Al continuar, aceptas nuestro <a
+                                                                        href="https://aplazo.s3.us-west-1.amazonaws.com/docs/privacyaplazo.pdf"
+                                                                        target="_blank" class="linkMorado">aviso de
+                                                                        privacidad.</a> </p>
+                                                            </label>
+                                                            <div id="privacidad_solicitud_error"
+                                                                class="alert alert-danger error d-none" role="alert">
+                                                                Debes aceptar nuestro aviso de privacidad
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="loader loader--style1 row d-none" title="0" id="spinner">
+                                            <svg class="col" version="1.1" id="loader-1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px"
+                                                height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40"
+                                                xml:space="preserve">
+                                                <path opacity="0.2" fill="#000"
+                                                    d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                    s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                    c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
+                                                </path>
+                                                <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                    C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                                    <animateTransform attributeType="xml" attributeName="transform"
+                                                        type="rotate" from="0 20 20" to="360 20 20" dur="0.5s"
+                                                        repeatCount="indefinite"></animateTransform>
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-12 text-center mt-4 mb-3">
+                                            <button class="btn btnMain" id="avanzar01">
+                                                Enviar mi información
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- FORM -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img 2 -->
+                <div class="col-12 noPadding">
+                    <img src="https://image.em.aplazo.mx/lib/fe3411737164047d761078/m/5/bb12107c-5052-40ee-9d0f-2995be80420f.png"
+                        alt="Llena el formulario. Revisaremos que tus datos sean correctos. Disfruta de tu crédito en efectivo Aplazo"
+                        class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-md-2">
+                        <img src="https://image.em.aplazo.mx/lib/fe3411737164047d761078/m/1/f2170aea-28ff-4009-9a7c-eeca9a2daff9.png"
+                            alt="Aplazo" class="img-fluid">
+                    </div>
+                    <div class="col-9 col-md-10">
+                        <p>
+                            © 2020-2022 Aplazo, Todos los derechos reservados.
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            Aplican términos y condiciones.
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://aplazo.s3.us-west-1.amazonaws.com/docs/privacyaplazo.pdf"
+                                target="_blank">Leer aviso de privacidad.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- /Content -->
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('form').addEventListener('submit', handleSubmit);
+})
+
+function handleSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const name = formData.get('name');
+    const origen = formData.get('origen');
+    const tipo = formData.get('tipo');
+    const id = formData.get('id');
+    const lastName = formData.get('lastName');
+    const secondLastName = formData.get('secondLastName');
+    const banco = formData.get('banco');
+    const clabe = formData.get('clabe');
+    const phone = formData.get('phone');
+    const email = formData.get('email');
+    const privacy = formData.get('privacidad');
+    const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+    const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+    console.log(privacy)
+    if(tipo!='email'){
+      //sms
+      if(origen!=phone){
+      alert('Este telefono no es el mismo del que se origino')
+        return;
+      }
+    }else{
+      //email
+      if(origen!=email){
+      alert('Este correo no es el mismo del que se origino')
+        return;
+      }
+    }
+    if (!emailRegex.test(email)) {
+        showAlert('email');
+        return;
+    }
+    if (!phoneRegex.test(phone)) {
+        showAlert('phone');
+        return;
+    }
+    if (clabe.trim().length != 18 || isNaN(Number(clabe.trim()))) {
+        showAlert('clabe');
+        return;
+    }
+    if (!banco) {
+        showAlert('banco');
+        return;
+    }
+    if (!lastName.trim()) {
+        showAlert('lastName');
+        return;
+    }
+    if (!secondLastName.trim()) {
+        showAlert('secondLastName');
+        return;
+    }
+    if (!name.trim()) {
+        showAlert('name');
+        return;
+    }
+    if (!privacy) {
+        showAlert('privacidad');
+        return;
+    }
+    e.target.submit();
+}
+
+function showAlert(id) {
+    const alert = document.querySelector(`#${id}_solicitud_error`);
+    alert.classList.remove('d-none');
+    alert.parentElement.parentElement.scrollIntoView({
+        behavior: 'smooth'
+    });
+    setTimeout(() => alert.classList.add('d-none'), 5000);
+}
+  </script>
+
+</body>
+
+</html>
